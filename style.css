@@ -1,0 +1,260 @@
+body {
+  margin: 0;
+}
+
+
+nav {
+  background-color:#678983;
+  display: flex;
+  height: 9vh;
+}
+
+nav .nav-left {
+  display: flex;
+  padding-left: 100px;
+  flex: 50%;
+  align-items: center;
+}
+
+
+nav .nav-left li {
+  display: inline;
+  font-size: 20px;
+}
+
+nav .nav-left ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 12px;
+}
+
+
+nav .nav-right {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center; 
+  flex: 50%;
+  padding-right: 100px;
+}
+
+nav .nav-right a {
+  background-color: #204969;
+  color: white;
+  padding: 8px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.container{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#D3DEDC ;
+}
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  padding: 50px;
+  border: 1px solid #6E7C7C;
+  border-radius: 10px;
+  box-shadow: 10px 10px #7C99AC;
+  background-color:#EDFFEC;
+}
+.contain{
+  display: flex;
+}
+.section-1{
+  width: 65%;
+  margin-right: 70px;
+}
+
+.par {
+  text-align: justify;
+}
+.about{
+  margin-top: 40px;
+}
+.button{
+  background-color: rgb(214, 62, 62);
+  text-decoration: none;
+  color: white;
+  padding: 8px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 20px;
+  font-size: 18px;
+}
+.icon{
+  color: #30475E;
+  text-decoration: none;
+    font-size: 18px;
+}
+.social-media{
+  margin-top: 40px;
+}
+.social-media a{
+  font-size: 40px;
+  margin-right: 30px;
+  color: black;
+  text-decoration: none;
+}
+.section-2{
+  flex: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  background-color: white;
+  border: 2px solid #A6A9B6;
+  box-shadow: 10px 10px #94B49F;
+  border-radius: 10px;
+  text-align: center;
+}
+.card img{
+  border-radius: 5px 5px 0px 0px ;
+  width: 300px;
+}
+.card h2{
+  margin-bottom: 0%;
+}
+.card p {
+  margin-top: 0;
+}
+
+
+
+
+
+
+.projectCard{
+  width: 100%;
+  height: auto;
+  background-color: #f8f8f8;
+}
+.projectCard h2 {
+  text-align: center;
+  justify-content: center;
+  padding: 50px 50px 20px 50px;
+  margin: 0;
+}
+
+.project-list {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap; /* Flex Wrap agar jika element melebihi width, maka akan di letakan pada bagian bawah */
+  margin: 0px auto;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+.project-card {
+  width: 28%;
+  background-color: #fff;
+  box-shadow: 3px 3px #7C99AC;
+  border-radius: 5px;
+  border: 1px solid #6E7C7C;
+  padding: 16px;
+  margin: 10px 10px 10px 10px;
+}
+.card-image img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid #6E7C7C;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-shadow: 3px 3px #7C99AC;
+}
+.project-card .project-name a {
+  color: black;
+}
+.project-card i {
+  font-size: 36px;
+}
+
+.project-card .durasi {
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+.project-card .description {
+  text-align: justify;
+}
+/* End Project Card */
+
+/* Button Edit Delete */
+.div-button-project {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.div-button-project .btn-aksi {
+  width: 48%;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color:rgb(214, 62, 62);
+  color: white;
+  cursor: pointer;
+}
+/* End Button Edit Delete */
+
+/* Detail Project */
+.detail-project-section {
+  width: 80%;
+  margin: 0px auto;
+}
+
+.detail-project-section h1 {
+  text-align: center;
+  padding: 30px;
+}
+
+.detail-project-section .div-detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-left {
+  width: 60%;
+}
+
+.detail-left img {
+  width: 100%;
+}
+
+.detail-right {
+  width: 40%;
+  margin-left: 30px;
+}
+
+.detail-right p {
+  display: flex;
+  align-items: center;
+}
+
+.detail-right i {
+  font-weight: bold;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.detail-techno {
+  display: flex;
+}
+
+.detail-techno-right {
+  margin-left: 20px;
+}
+
+.detail-description {
+  text-align: justify;
+  margin: 50px auto;
+}
