@@ -6,7 +6,7 @@ function addProject(event) {
 
     let name = document.getElementById('input-name').value
     let description = document.getElementById('input-description').value
-    let image = document.getElementById('input-image').file
+    let image = document.getElementById('input-image').files
 
     image = URL.createObjectURL(image[0])
 
@@ -16,7 +16,7 @@ function addProject(event) {
         image: image,
     }
 
-    projects.push.project
+    projects.push(project)
     console.log(projects);
 
     renderProject()
@@ -26,18 +26,18 @@ function renderProject() {
 
     document.getElementById('project-list').innerHTML = ''
     
-    for (let dataProject = 0; dataProject < project.length; dataProject++) {
-        document.getElementById('demo').innerHTML +=
+    for (let dataProject = 0; dataProject < projects.length; dataProject++) {
+        document.getElementById('project-list').innerHTML +=
         `
         <div class="project-card">
         <div class="card-image">
             <img src=${projects[dataProject].image} alt="ggwwp">
         </div>
         <h4 class="project-name">
-            <a href="detail-project.html">${projects[dataProject].image}</a>
+            <a href="detail-project.html">${projects[dataProject].name}</a>
         </h4>
         <p class="durasi">durasi: 3 bulan</p>
-        <p class="description">${projects[dataProject].d}</p>
+        <p class="description">${projects[dataProject].description}</p>
         <i class="fa-brands fa-node"></i>
         <i class="fa-brands fa-react"></i>
         <i class="fa-brands fa-connectdevelop"></i>
@@ -47,8 +47,6 @@ function renderProject() {
             <button class="btn-aksi">delete</button>
         </div>
     </div>
-
-        `
+    `
     }
-    
 }
