@@ -1,49 +1,54 @@
-let blogs = []
-function addBlog(event) {
+let projects =[]
+console.log( 'data',projects);
 
-    event.preventDefault();
+function addProject(event) {
+    event.preventDefault()
 
     let name = document.getElementById('input-name').value
     let description = document.getElementById('input-description').value
-    let image = document.getElementById('input-image').files
+    let image = document.getElementById('input-image').file
 
     image = URL.createObjectURL(image[0])
 
-    let blog = {
+    let project = {
         name: name,
         description: description,
         image: image,
     }
 
-    blogs.push(blog)
-    renderBlog ()
+    projects.push.project
+    console.log(projects);
 
+    renderProject()
 }
 
-function renderBlog() {
+function renderProject() {
 
-    document.getElementById('projectCard').innerHTML ='';
-    for (let dataBlog = 0; dataBlog < blogs.length; dataBlog++) {
-
-        document.getElementById('projectCard').innerHTML +=
-            `
+    document.getElementById('project-list').innerHTML = ''
+    
+    for (let dataProject = 0; dataProject < project.length; dataProject++) {
+        document.getElementById('demo').innerHTML +=
+        `
         <div class="project-card">
         <div class="card-image">
-            <img src=${projec[dataBlog].image} alt="ggwwp">
+            <img src=${projects[dataProject].image} alt="ggwwp">
         </div>
         <h4 class="project-name">
-            <a href="detail-project.html">${projec[dataBlog].name}</a></h4>
+            <a href="detail-project.html">${projects[dataProject].image}</a>
+        </h4>
         <p class="durasi">durasi: 3 bulan</p>
-        <p class="description">${projec[dataBlog].description}</p>
+        <p class="description">${projects[dataProject].d}</p>
         <i class="fa-brands fa-node"></i>
         <i class="fa-brands fa-react"></i>
         <i class="fa-brands fa-connectdevelop"></i>
         <i class="fa-brands fa-js-square"></i>
         <div class="div-button-project">
-            <button class="btn">edit</button>
-            <button class="btn">delete</button>
+            <button class="btn-aksi">edit</button>
+            <button class="btn-aksi">delete</button>
         </div>
     </div>
+
         `
     }
+    
 }
